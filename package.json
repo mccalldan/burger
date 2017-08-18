@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "user adds a burger that they would like to eat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccalldan/burger.git"
+  },
+  "author": "dan mccall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mccalldan/burger/issues"
+  },
+  "homepage": "https://github.com/mccalldan/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1"
+  }
+}
