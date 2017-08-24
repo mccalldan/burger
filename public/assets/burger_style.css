@@ -1,0 +1,31 @@
+body{
+	background: yellow;
+	background-repeat: repeat-x;
+}
+
+h1{
+	text-align: center;
+	font-size: 40px;
+	color: red;
+}
+
+
+
+#burger-input{
+	text-align: center;
+	width: 25%;
+	height: 75px;
+	border-color: green;
+	border-width: 15px;
+}
+
+#order{
+	text-align: center;
+	width: 25%;
+	background: red;
+	font-size: 20px;
+}
+
+#order-desc{
+	text-align: center;
+}

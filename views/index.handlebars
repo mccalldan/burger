@@ -1,0 +1,59 @@
+<h1>Eat Da Burger!</h1>
+
+{{!-- New Burger List --}}
+  <div class="row">
+    <div class="col-md-4 col-md-offset-1">
+      <div class="panel-panel default">
+        <ul class="list-group">
+        {{#each burgers}}
+          {{#unless this.devoured}}
+          <li class="list-group-item">
+            <div class="input-group">
+              <p class="lead"> {{this.burger_name}} </p>
+              <span class="input-group-btn">
+                <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+                  <input type="hidden" name="devoured" value="true">
+                  <button class="btn btn-default btn-lg" type="submit"> EAT IT! </button>
+                </form>
+              </span>
+            </div>
+          </li>
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+
+{{!-- Devoured Burger List --}}
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2">
+      <div class="panel panel-default">
+        <ul class="list-group">
+        {{#each burgers}}
+          {{#if this.devoured}}
+          <li class="list-group-item">
+            <p class="lead">{{this.burger_name}} </p>
+          </li>
+          {{/if}}
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+{{!--Burger Ordering Form --}}
+
+<div>
+
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input placeholder="Type your Burger here..."type="text" id= "burger-input" name="devoured" value="">
+          <br>
+          <br>
+          <button type="submit" id="order">Order</button>
+        </form>
+        <p id="order-desc">Enter the Burger you want and click the "Order" button.</p>
+
+</div>
+
