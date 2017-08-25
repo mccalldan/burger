@@ -1,31 +1,50 @@
 body{
-	background: yellow;
+	font-family: 'Chango', cursive;
+	background: #fff176;
 	background-repeat: repeat-x;
 }
 
 h1{
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	color: red;
 }
 
 
-
 #burger-input{
 	text-align: center;
-	width: 25%;
+	width: 50%;
 	height: 75px;
-	border-color: green;
+	border-color: brown;
 	border-width: 15px;
+	border-color: yellow;
+	margin-left: 325px;
 }
 
 #order{
+	border-color: yellow;
+	border-width: 5px;
+	color: white;
 	text-align: center;
 	width: 25%;
-	background: red;
+	background: brown;
 	font-size: 20px;
+	margin-left: 485px;
 }
 
 #order-desc{
-
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
 }
+
+#nbl{
+	background: #76ff03;
+}
+
+#dbl{
+	color: white;
+	background: red;
+}
+
